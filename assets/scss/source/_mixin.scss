@@ -1,0 +1,28 @@
+// transform
+@mixin transformer ($scale) {
+    transform: $scale;
+    -webkit-transform: $scale;
+    -moz-transform: $scale;
+    -ms-transform: $scale;
+    -o-transform: $scale;
+}
+// transition
+@mixin transit ($attr, $sec) {
+    transition: $attr, $sec;
+    -webkit-transition: $attr, $sec;
+    -moz-transition: $attr, $sec;
+    -ms-transition: $attr, $sec;
+    -o-transition: $attr, $sec;
+}
+// center
+@mixin  flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// col
+@mixin col($width) {
+    width: $width;
+    padding: 0 15px;
+    box-sizing: border-box;
+}

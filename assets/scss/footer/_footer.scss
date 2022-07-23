@@ -1,0 +1,166 @@
+@import '../../scss/source/mixin';
+@import '../../scss/source/variable';
+
+.footer {
+    height: 420px;
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+    padding: 0 19.7%;
+    .footer-top {
+        position: relative;
+        #btn-nav {
+            position: absolute;
+            display: none;
+            padding: 6px 21px;
+            cursor: pointer;
+            top: 40%;
+            right: 0;
+            border: 1px solid rgb(105, 105, 105);
+            p {
+                letter-spacing: 1px;
+                font-size: 14px;
+                font-family: "Fira Sans";
+                color: rgb(171, 171, 171);
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 1.714;
+                margin-right: 14px; 
+            }
+            i {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                color: rgb(214, 186, 141);
+                text-transform: uppercase;
+            }
+            &:hover {
+                background-color: rgb(214, 186, 141);
+                p {
+                    color: #000;
+                }
+                i {
+                    color: #fff;
+                }
+            }
+        }
+        .nav-mobile {
+            position: fixed;
+            display: none;
+            top: 0;
+            right: 0;
+            box-shadow: -10px 0px 20px 0px rgba(187, 187, 187, .7);
+            .nav-title {
+                color: #fff;
+                text-align: center;
+                font-style: bold;
+                font-size: 30px;
+                line-height: 51px;
+            }
+        }
+        display: flex;
+        height: 230px;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(36, 36, 36);
+        ul {
+            display: flex;
+            list-style: none;
+            margin-top: 93px;
+            margin-left: 10px;
+            li {
+                letter-spacing: 2px;
+                margin-right: 30px;
+                font-size: 14px;
+                font-family: "Fira Sans";
+                color: rgb(171, 171, 171);
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 1.714;
+                cursor: pointer;
+                &:hover {
+                    color: rgb(214, 186, 141);
+                }
+            }
+        }
+        img {
+            width: 180px;
+            height: 115px;
+            cursor: pointer;
+        }
+        .btn-subscribe {
+            display: flex;
+            padding: 6px 23px;
+            border: 1px solid rgb(105, 105, 105);
+            margin-top: 93px;
+            cursor: pointer;
+            margin-right: -5px;
+            p {
+                letter-spacing: 2px;
+                font-size: 13px;
+                font-family: "Fira Sans";
+                color: rgb(171, 171, 171);
+                text-transform: uppercase;
+                line-height: 1.714;
+                margin-right: 14px; 
+            }
+            i {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                color: rgb(214, 186, 141);
+                text-transform: uppercase;
+            }
+            &:hover {
+                background-color: rgb(214, 186, 141);
+                p {
+                    color: #000;
+                }
+                i {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        display: flex;
+        padding-top: 58px;
+        justify-content: space-between;
+        margin-right: -4px;
+        .copy-right {
+            width: 350px;
+            font-size: 14px;
+            font-family: "Fira Sans";
+            color: rgb(105, 105, 105);
+            line-height: 2;
+        }
+        .footer-social {
+            display: flex;
+            justify-content: space-between;
+            .footer-social-item {
+                margin-top: -12px;
+                margin-right: 5px;
+                height: 50px;
+                width: 50px;
+                border-width: 2px;
+                border-color: rgb(105, 105, 105);
+                border-style: solid;
+                border-radius: 50%;
+                opacity: 0.502;
+                text-align: center;
+                cursor: pointer;
+                i {
+                    color: #fff;
+                    font-size: 16px;
+                    line-height: 3;      
+                }
+                &:hover {
+                    background-color: rgb(214, 186, 141);
+                    opacity: 1;
+                    i {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
